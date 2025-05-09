@@ -5,7 +5,6 @@ A full-stack quiz application built with React, TypeScript, Node.js, and MongoDB
 ## Features
 
 - 🎯 Multiple quiz categories
-- 📊 Three difficulty levels (Easy, Medium, Hard)
 - ⚡ Real-time feedback on answers
 - 📈 Score tracking
 - 🎨 Modern and responsive UI
@@ -138,18 +137,6 @@ quiz-app/
     - `category`: Category ID
     - `difficulty`: Difficulty level (easy/medium/hard)
     - `amount`: Number of questions
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 

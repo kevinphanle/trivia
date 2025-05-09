@@ -85,7 +85,7 @@ async function seedDatabase(): Promise<void> {
         await Question.insertMany(formatted);
         console.log(`Questions for ${cat.name} seeded`);
 
-        // Add a longer delay between categories
+        // Add a delay between categories to prevent rate limiting
         await delay(3000);
       } catch (error) {
         console.error(`Error seeding questions for ${cat.name}:`, error);

@@ -127,10 +127,7 @@ export default function Quiz() {
       <div className="quiz-container">
         <div className="quiz-header">
           <h2>Quiz Results</h2>
-          <div className="score-display">Score: {score}/5</div>
-          <div className={`score-indicator ${scoreClass}`} />
         </div>
-
         {results.results.map((res: QuizResult, idx: number) => (
           <QuestionCard
             key={idx}
@@ -140,6 +137,11 @@ export default function Quiz() {
             correctAnswer={res.correctAnswer}
           />
         ))}
+
+        <div className="quiz-header">
+          <div className="score-display">Score: {score}/5</div>
+          <div className={`score-indicator ${scoreClass}`} />
+        </div>
 
         <button onClick={handleRestart} className="submit-button">
           Start New Quiz

@@ -84,8 +84,12 @@ export default function StartQuizForm() {
             className="form-select"
           >
             <option value="easy">Easy</option>
-            <option value="medium">Medium</option>
-            <option value="hard">Hard</option>
+            <option value="medium" disabled>
+              Medium
+            </option>
+            <option value="hard" disabled>
+              Hard
+            </option>
           </select>
         </div>
 

@@ -4,13 +4,11 @@ import Question from "../models/Question";
 
 const router = express.Router();
 
-// GET /api/categories
 router.get("/categories", async (req: Request, res: Response) => {
   const categories = await Category.find();
   res.json(categories);
 });
 
-// GET /api/quiz?category=11&difficulty=easy&amount=5
 router.get("/quiz", async (req: Request, res: Response) => {
   const { category, difficulty, amount } = req.query;
 
@@ -36,7 +34,6 @@ interface Answer {
   selectedAnswer: string;
 }
 
-// POST /api/quiz/score
 router.post(
   "/quiz/score",
   async (req: Request<{}, {}, { answers: Answer[] }>, res: Response) => {
